@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            background-color: cornflowerblue;
+        }
+
+        li {
+            
+        }
+
+        ol > li {
+            background-color: rgb(232, 223, 105);
+        }
+
+        #h2Ol {
+            color: blueviolet;
+        }
+
+        .red-text {
+            color: darkred;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            font-style: italic;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="red-text">Списки HTML</h1>
+    <section>
+        <h2 id="h2Ol">Нумерованный список (Ordered List)</h2>
+        <ol type="1" start="26">
+            <li>Элемент списка (List Item)</li>
+            <li>Элемент списка (List Item)</li>
+            <li>Элемент списка (List Item)</li>
+            <li>Элемент списка (List Item)</li>
+        </ol>
+    </section>    
+    <section>
+        <h2>Ненумерованный список (Unordered List)</h2>
+        <ul>
+            <li>Элемент списка (List Item)</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, eveniet quibusdam! Hic, nisi? Ratione incidunt sapiente esse? Nihil soluta in dicta quam modi, unde adipisci iste harum reprehenderit natus explicabo!</li>
+        </ul>
+    </section> 
+    <section>
+        <h2>Нумерованный список + вложенный список</h2>
+        <ol>
+            <li>Элемент списка (List Item)
+                <ul>
+                    <li>Элемент списка (List Item)</li>
+                    <li>Элемент списка (List Item)</li>
+                </ul>
+            </li>
+            <li>Элемент списка (List Item)</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Список описаний (Description List)</h2>
+        <dl>
+            <dt>JavaScript </dt>
+            <dd>
+                мультипарадигменный язык программирования. 
+                Поддерживает объектно-ориентированный, 
+                императивный и функциональный стили.
+            </dd>
+            <dt>Python </dt>
+            <dd>
+                мультипарадигмальный высокоуровневый язык программирования 
+                общего назначения с динамической строгой типизацией 
+                и автоматическим управлением памятью, ориентированный 
+                на повышение производительности разработчика, 
+                читаемости кода и его качества, а также на обеспечение 
+                переносимости написанных на нём программ.
+            </dd>
+        </dl>
+    </section>
+    </main>
+    
+</body>
+</html>
